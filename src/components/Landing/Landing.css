@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 100%;
   position: relative;
 }
 
@@ -56,6 +57,9 @@
   flex: 65%;
   height: 100%;
   background-color: #eaeaea;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -63,8 +67,8 @@
 }
 
 .lcr--content {
-  width: 45%;
-  margin-right: 7rem;
+  margin-left: auto;
+    margin-right: auto;
   font-family: var(--primaryFont);
   font-style: normal;
 }
