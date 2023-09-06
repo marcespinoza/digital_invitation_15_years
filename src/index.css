@@ -13,6 +13,43 @@
        url('./assets/fonts/Bestermind/BestermindRegular.ttf')  format('truetype'), 
 }
 
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url('./assets/fonts/Roboto/Roboto-Bold.ttf'); 
+  src: url('./assets/fonts/Roboto/Roboto-Bold.ttf') format('embedded-opentype'), 
+       url('./assets/fonts/Roboto/Roboto-Bold.ttf')  format('truetype'), 
+}
+
+@font-face {
+  font-family: 'Roboto-medium';
+  src: url('./assets/fonts/Roboto/Roboto-Medium.ttf'); 
+  src: url('./assets/fonts/Roboto/Roboto-Medium.ttf') format('embedded-opentype'), 
+       url('./assets/fonts/Roboto/Roboto-Medium.ttf')  format('truetype'), 
+}
+
+@font-face {
+  font-family: 'Roboto-thin';
+  src: url('./assets/fonts/Roboto/Roboto-Thin.ttf'); 
+  src: url('./assets/fonts/Roboto/Roboto-Thin.ttf') format('embedded-opentype'), 
+       url('./assets/fonts/Roboto/Roboto-Thin.ttf')  format('truetype'), 
+}
+
+@font-face {
+  font-family: 'Roboto-light';
+  src: url('./assets/fonts/Roboto/Roboto-Light.ttf'); 
+  src: url('./assets/fonts/Roboto/Roboto-Light.ttf') format('embedded-opentype'), 
+       url('./assets/fonts/Roboto/Roboto-Light.ttf')  format('truetype'), 
+}
+
+@font-face {
+  font-family: 'Popins-thin100';
+  src: url('./assets/fonts/Poppins/Poppins-Thin.ttf'); 
+  src: url('./assets/fonts/Poppins/Poppins-Thin.ttf') format('embedded-opentype'), 
+       url('./assets/fonts/Poppins/Poppins-Thin.ttf')  format('truetype');
+       font-weight: lighter; 
+       
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
