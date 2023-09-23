@@ -1,36 +1,93 @@
-import React,{useContext} from 'react';
 
-import { ThemeContext } from '../../contexts/ThemeContext';
 
-import './Experience.css';
+import bgdonut1 from './image/bg-donut-1.png'
+import bgdonut2 from './image/bg-donut-2.png'
 
-import { experienceData } from '../../data/experienceData'
-import ExperienceCard from './ExperienceCard';
+import { Pagination, EffectCoverflow, Autoplay  } from 'swiper'
+
+import { Swiper, SwiperSlide } from 'swiper/react/swiper-react'
+
+
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
+
+import './Carousel.css'
+import 'swiper/swiper.min.css'
+import 'swiper/modules/pagination/pagination.min.css'
+
+
+const slider = [
+  {
+      title: "Donut 1",
+      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
+      url: "https://images.unsplash.com/photo-1612240498936-65f5101365d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      title: "Donut 2",
+      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
+      url: "https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+    },
+    {
+      title: "Donut 3",
+      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
+      url: "https://images.unsplash.com/photo-1646615077267-97c6088b74d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80"
+    },
+  
+    {
+      title: "Donut 4",
+      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
+      url: "https://images.unsplash.com/photo-1631397833242-fc6213046352?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      title: "Donut 5",
+      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
+      url: "https://images.unsplash.com/photo-1533137138-ba67dc90d752?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+]
 
 function Experience() {
-
-    const { theme } = useContext(ThemeContext);
-    return (
-        <div className="experience" id="experience" style={{backgroundColor: theme.secondary}}> 
-             <div className="experience-body">
-                 <div className="experience-image">
-                     <img src={theme.expimg} alt="" />
-                 </div>
-                 <div className="experience-description">
-                    <h1 style={{color:theme.primary}}>Experience</h1>
-                    {experienceData.map(exp =>(
-                        <ExperienceCard 
-                            key={exp.id}
-                            id={exp.id}
-                            jobtitle={exp.jobtitle}
-                            company={exp.company}
-                            startYear={exp.startYear}
-                            endYear={exp.endYear}/>
-                    ))}
-                 </div>
-             </div>
+  return (
+    <div className='carousel'>
+        <div>
+            <div className='carousel-content'>
+                <span>discover</span>
+                <h1>Sweet Donut Heaven</h1>
+                <hr />
+                <p>Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.</p>
+                <a href="#" className='slider-btn'>download a</a>
+            </div>
         </div>
-    )
-}
 
+        <Swiper 
+        
+        className='myswiper'
+        modules={[Pagination, EffectCoverflow, Autoplay]}
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 3,
+            slideShadows: true
+        }}
+        loop={true}
+        pagination={{clickable: true}}
+        slidesPerView={2}
+        >
+            {
+                slider.map(data => (
+                    <SwiperSlide style={{ backgroundImage: `url(${data.url})` }} className="myswiper-slider">
+                  
+                    </SwiperSlide>
+                ))
+            }
+        </Swiper>
+
+        <img src={bgdonut1} alt="bg image" className='bgdonut1' />
+        <img src={bgdonut2} alt="bg image" className='bgdonut2' />
+    </div>
+  )
+}
 export default Experience
