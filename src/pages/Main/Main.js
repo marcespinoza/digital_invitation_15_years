@@ -21,8 +21,6 @@ function Main() {
             <Achievement />
             <Services />
             <Testimonials />
-            <Blog />
-            <Contacts />
             <Footer />
         </div>
     )

@@ -4,26 +4,38 @@ import Marquee from "react-fast-marquee";
 import './Skills.css'
 
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { skillsData } from '../../data/skillsData'
-import { skillsImage } from '../../utils/skillsImage'
+import Lottie from "react-lottie";
+
+import musicAnimation from "../../assets/json/animation_music.json";
+
 
 function Skills() {
 
     const { theme } = useContext(ThemeContext);
 
-    const skillBoxStyle = {
-        backgroundColor: theme.secondary,
-        boxShadow: `0px 0px 30px ${theme.primary30}`
-    }
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: musicAnimation,
+
+        rendererSettings: {
+           preserveAspectRatio: "xMidYMid slice",
+        },
+     };
 
     return (
-        <div className="skills" style={{backgroundColor: theme.secondary}}>
+        <div className="skills">
+             <Lottie options={defaultOptions} height={200} width={200} />
             <div className="skillsHeader">
-                <h2>Skills</h2>
+                <h2>Música</h2>
+            </div>
+            <div className="skillsHeader">
+             <p >
+             ¡Ayudame sugiriendo las canciones que pensás que no pueden faltar en la fiesta!
+            </p>
             </div>
             <div>
-            <button class="neons">Hello</button>
-
+               <button class="neons">Sugerir canción</button>
             </div>
         </div>
     )

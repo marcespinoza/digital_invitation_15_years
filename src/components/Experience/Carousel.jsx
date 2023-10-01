@@ -17,7 +17,7 @@ const slider = [
     {
         title: "Donut 1",
         description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
-        url: "https://images.unsplash.com/photo-1612240498936-65f5101365d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+        url: "https://onedrive.live.com/embed?resid=C478CFE9F71064A1%214384&authkey=%21ABaBOn6kvVZ3YCk&width=480&height=640"
       },
       {
         title: "Donut 2",
