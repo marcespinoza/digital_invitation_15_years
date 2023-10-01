@@ -21,8 +21,9 @@ function Education() {
      };
     const { theme } = useContext(ThemeContext);
     return (
-        <div className="education" id="resume" >
-           
+        <div className="bgimg-1">
+          <div className="caption">
+        <div id="resume" >           
             <div className="education-body">
                 <div className="education-description">
                 <h1>@misquinceanalilen</h1>    
@@ -30,8 +31,10 @@ function Education() {
               
                 </div>
 
-  </div>
+            </div>
         </div>
+        </div>
+        </div>  
     )
 }
 

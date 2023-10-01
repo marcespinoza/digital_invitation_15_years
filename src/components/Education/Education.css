@@ -178,3 +178,25 @@
 @media only screen and (device-width: 768px) {
 
 }
+
+.bgimg-1 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("../../assets/png/hashtagwallpaper.jpg");
+    min-height: 50vh;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}

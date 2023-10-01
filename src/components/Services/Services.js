@@ -1,39 +1,40 @@
-import React,{useContext} from 'react';
+import React,{ useContext } from 'react';
+
 
 import { ThemeContext } from '../../contexts/ThemeContext';
+import Lottie from "react-lottie";
 
-import { servicesData } from '../../data/servicesData';
-
-import './Services.css'
-import SingleService from './SingleService/SingleService';
+import musicAnimation from "../../assets/json/animation_music.json";
 
 function Services() {
 
     const { theme } = useContext(ThemeContext);
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: musicAnimation,
+
+        rendererSettings: {
+           preserveAspectRatio: "xMidYMid slice",
+        },
+     };
+
     return (
-        <>
-            {servicesData.length > 0 && (
-                <div className="services" id="services" style={{backgroundColor:theme.secondary}}>
-                    <div className="services-header">
-                        <h1 style={{color: theme.primary}}>Services</h1>
-                    </div>
-                    <div className="services-body">
-                        <p style={{color:theme.tertiary80}}>
-                            These are some of the services I offer. Reach out to me if I can help you with any!
-                        </p>
-                        <div className="services-bodycontainer">
-                            {servicesData.map(services => (
-                                <SingleService
-                                key={services.id}
-                                id={services.id}
-                                title={services.title}
-                                icon={services.icon}/>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            )}
-       </>
+        <div className="skills">
+             <Lottie options={defaultOptions} height={200} width={200} />
+            <div className="skillsHeader">
+                <h2>Música</h2>
+            </div>
+            <div className="skillsHeader">
+             <p >
+             ¡Ayudame sugiriendo las canciones que pensás que no pueden faltar en la fiesta!
+            </p>
+            </div>
+            <div>
+               <button class="neons">Sugerir canción</button>
+            </div>
+        </div>
     )
 }
 

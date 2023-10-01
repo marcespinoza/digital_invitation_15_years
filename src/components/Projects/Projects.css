@@ -2,8 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
+    background-color: pink;
     justify-content: flex-start;
-    min-height: 100vh;
+    min-height: 10vh;
     overflow-x: hidden;
     padding: 2rem;
 }
@@ -49,21 +51,9 @@
     margin-top: 2rem;
 }
 
-.projects--viewAll a button {
-    outline: none;
-    border: none;
-    width: 150px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-transform: inherit;
-    border-radius: 45px;
-    font-size: 1.05rem;
-    font-family: var(--primaryFont);
-    font-weight: 500;
-    padding-left: 1.5rem;
-    cursor: pointer;
+.projects button {
+    color: black;
+    border-color: black;
 }
 
 
