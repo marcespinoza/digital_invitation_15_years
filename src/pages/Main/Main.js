@@ -11,7 +11,6 @@ function Main() {
                 <title>Mis 15 - {headerData.name}</title>
             </Helmet>
 
-            <Navbar />        
             <Landing />
             <About />
             <Education />

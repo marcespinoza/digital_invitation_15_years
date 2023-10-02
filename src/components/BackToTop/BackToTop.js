@@ -1,32 +1,42 @@
-import React, { useState, useContext } from 'react';
-import { IoIosArrowDropupCircle } from 'react-icons/io';
+import React, { useState, useContext, useEffect } from 'react';
+import { IoMdPlayCircle, IoMdPause } from 'react-icons/io';
 import { makeStyles } from '@material-ui/core/styles';
+import sound from "../../assets/music/taylor.mp3"
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import './BackToTop.css';
 
 function BackToTop() {
-    const [visible, setVisible] = useState(false);
+    const [play, setPlaying] = useState(false);
 
     const { theme } = useContext(ThemeContext);
 
-    const toggleVisible = () => {
-        const scrolled = document.documentElement.scrollTop;
-        if (scrolled > 300) {
-            setVisible(true);
-        } else if (scrolled <= 300) {
-            setVisible(false);
-        }
-    };
+    const useAudio = url => {
+        const [audio] = useState(new Audio(url));
+        const [playing, setPlaying] = useState(false);
+      
+        const toggle = () => setPlaying(!playing);
+      
+        useEffect(() => {
+            playing ? audio.play() : audio.pause();
+          },
+          [playing]
+        );
+      
+        useEffect(() => {
+          audio.addEventListener('ended', () => setPlaying(false));
+          return () => {
+            audio.removeEventListener('ended', () => setPlaying(false));
+          };
+        }, []);
+      
+        return [playing, toggle];
+      };
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        });
-    };
+      const [playing, toggle] = useAudio(sound);
 
-    window.addEventListener('scroll', toggleVisible);
+ 
+
 
     const useStyles = makeStyles(() => ({
         icon: {
@@ -39,11 +49,13 @@ function BackToTop() {
 
     return (
         <div
-            style={{ display: visible ? 'inline' : 'none' }}
+            style={{ display: 'inline' }}
             className='backToTop'
         >
-            <button onClick={scrollToTop} aria-label='Back to top'>
-                <IoIosArrowDropupCircle className={classes.icon} />
+            <button onClick={toggle} aria-label='Back to top'>
+                { playing? <IoMdPause className={classes.icon} />:
+                <IoMdPlayCircle className={classes.icon} />
+                }
             </button>
         </div>
     );
