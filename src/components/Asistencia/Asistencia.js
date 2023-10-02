@@ -3,11 +3,11 @@ import React,{ useContext } from 'react';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import Lottie from "react-lottie";
-import './Projects.css'
+import './Asistencia.css'
 
 import musicAnimation from "../../assets/json/animation_music.json";
 
-function Projects() {
+function Asistencia() {
 
     const { theme } = useContext(ThemeContext);
 
@@ -22,14 +22,14 @@ function Projects() {
      };
 
     return (
-            <div className="projects">
+            <div className="asistencia">
                 <h1>Confirmación de asistencia</h1>
-            <div className="projects">
+            <div className="asistencia">
              <p >
                    Cuento con tu presencia.
                    ¡Confirmá tu asistencia!
             </p>
-            <div className="projects">
+            <div className="asistencia">
                <button class="neons">Confirmar asistencia</button>
             </div>
             </div>
@@ -38,4 +38,4 @@ function Projects() {
     )
 }
 
-export default Projects
+export default Asistencia

@@ -3,10 +3,11 @@ import React,{ useContext } from 'react';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import Lottie from "react-lottie";
+import './DressCode.css'
 
-import musicAnimation from "../../assets/json/animation_music.json";
+import musicAnimation from "../../assets/json/dress.json";
 
-function Services() {
+function DressCode() {
 
     const { theme } = useContext(ThemeContext);
 
@@ -21,21 +22,18 @@ function Services() {
      };
 
     return (
-        <div className="skills">
+        <div className="dressCode">
              <Lottie options={defaultOptions} height={200} width={200} />
-            <div className="skillsHeader">
-                <h2>Música</h2>
+            <div className="dressCode-header">
+                <h2>DRESS CODE</h2>
             </div>
-            <div className="skillsHeader">
+            <div className="dressCode-header">
              <p >
-             ¡Ayudame sugiriendo las canciones que pensás que no pueden faltar en la fiesta!
+               L-gante
             </p>
-            </div>
-            <div>
-               <button class="neons">Sugerir canción</button>
             </div>
         </div>
     )
 }
 
-export default Services
+export default DressCode

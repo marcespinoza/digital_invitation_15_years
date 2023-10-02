@@ -1,9 +1,9 @@
-.projects {
+.asistencia {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     color: black;
-    background-color: pink;
+    background-color: rgb(255, 255, 255);
     justify-content: flex-start;
     min-height: 10vh;
     overflow-x: hidden;
@@ -11,7 +11,7 @@
 }
 
 
-.projects--header {
+.asistencia--header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,13 +20,13 @@
 }
 
 
-.projects--header h1 {
+.asistencia--header h1 {
     margin-bottom: 40px;
     font-size: 3.5rem;
     font-family: var(--primaryFont);
 }
 
-.projects--body {
+.asistencia--body {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
     justify-content: center;
 }
 
-.projects--bodyContainer {
+.asistencia--bodyContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,7 @@
     width: 100%;
 }
 
-.projects--viewAll {
+.asistencia--viewAll {
     width: 100%;
     padding: 2rem;
     display: flex;
@@ -51,7 +51,7 @@
     margin-top: 2rem;
 }
 
-.projects button {
+.asistencia button {
     color: black;
     border-color: black;
 }
@@ -64,7 +64,7 @@
 
 
 @media screen and (max-width: 992px) {
-    .projects--bodyContainer {
+    .asistencia--bodyContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -74,22 +74,22 @@
 }
 
 @media screen and (max-width: 800px) {
-    .projects--header h1 {
+    .asistencia--header h1 {
         font-size: 3rem;
         margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .projects--header h1 {
+    .asistencia--header h1 {
         font-size: 2.5rem;
         margin-bottom: 20px;
     }
-    .projects--viewAll {
+    .asistencia--viewAll {
         position: relative;
         margin-top: 4rem;
     }
-    .projects--viewAll a {
+    .asistencia--viewAll a {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);  

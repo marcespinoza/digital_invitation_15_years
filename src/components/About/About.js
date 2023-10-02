@@ -17,8 +17,8 @@ const About = ({ name, day, month }) => {
   if (name === undefined || day === undefined || month === undefined) {
     // This is if not enough params are provided
     name = 'Ana Lilen'; // Name of the Person
-    month = 9; // Month of the Birthday
-    day = 5; // Day of the Birthday
+    month = 11; // Month of the Birthday
+    day = 3; // Day of the Birthday
   }
 
   // get current time
@@ -26,9 +26,6 @@ const About = ({ name, day, month }) => {
   // get current year
   const currentYear = currentTime.getFullYear();
 
-  // Getting the Birthday in Data Object
-  // WE subtract 1 from momnth ; Months start from 0 in Date Object
-  // Bithday Boolean
   const isItBday =
     currentTime.getDate() === day && currentTime.getMonth() === month - 1;
 
@@ -104,8 +101,7 @@ const About = ({ name, day, month }) => {
 
   return (
     <div className='page'>
-      <Countdown countdownData={state} name={name} />
-      
+      <Countdown countdownData={state} name={name} />      
     </div>
   );
 };

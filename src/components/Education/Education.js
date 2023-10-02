@@ -22,17 +22,18 @@ function Education() {
     const { theme } = useContext(ThemeContext);
     return (
         <div className="bgimg-1">
-          <div className="caption">
         <div id="resume" >           
             <div className="education-body">
                 <div className="education-description">
-                <h1>@misquinceanalilen</h1>    
-                <Lottie options={defaultOptions} height={300} width={300} />
-              
+                <h1>@anaa_xd2 #15analilen</h1>    
+                <div className="education-description">
+                    ¡Preparate para esta gran fiesta!
+                    Seguime y etiquetame en tus fotos y videos.
                 </div>
-
+                  <Lottie options={defaultOptions} height={300} width={300} />              
+                </div>
+                
             </div>
-        </div>
         </div>
         </div>  
     )

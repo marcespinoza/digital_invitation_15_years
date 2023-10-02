@@ -43,15 +43,6 @@ const slider = [
 function Experience() {
   return (
     <div className='carousel'>
-        <div>
-            <div className='carousel-content'>
-                <span>discover</span>
-                <h1>Sweet Donut Heaven</h1>
-                <hr />
-                <p>Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.</p>
-                <a href="#" className='slider-btn'>download a</a>
-            </div>
-        </div>
 
         <Swiper 
         
@@ -80,8 +71,6 @@ function Experience() {
             }
         </Swiper>
 
-        <img src={bgdonut1} alt="bg image" className='bgdonut1' />
-        <img src={bgdonut2} alt="bg image" className='bgdonut2' />
     </div>
   )
 }

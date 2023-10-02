@@ -50,7 +50,6 @@ const Carousel = () => {
                 <span>discover</span>
                 <h1>Sweet Donut Heaven</h1>
                 <hr />
-                <p>Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.</p>
                 <a href="#" className='slider-btn'>download app</a>
             </div>
         </div>

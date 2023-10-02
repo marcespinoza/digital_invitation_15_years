@@ -1,6 +1,6 @@
 import React,{ useContext } from 'react';
 
-import './Skills.css'
+import './Musica.css'
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import Lottie from "react-lottie";
@@ -8,7 +8,7 @@ import Lottie from "react-lottie";
 import musicAnimation from "../../assets/json/animation_music.json";
 
 
-function Skills() {
+function Musica() {
 
     const { theme } = useContext(ThemeContext);
 
@@ -23,12 +23,11 @@ function Skills() {
      };
 
     return (
-        <div className="skills">
-             <Lottie options={defaultOptions} height={200} width={200} />
-            <div className="skillsHeader">
+        <div className="musica">
+            <div className="musicaHeader">
                 <h2>Música</h2>
             </div>
-            <div className="skillsHeader">
+            <div className="musicaHeader">
              <p >
              ¡Ayudame sugiriendo las canciones que pensás que no pueden faltar en la fiesta!
             </p>
@@ -40,4 +39,4 @@ function Skills() {
     )
 }
 
-export default Skills
+export default Musica
