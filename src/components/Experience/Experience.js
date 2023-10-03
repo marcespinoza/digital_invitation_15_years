@@ -1,7 +1,5 @@
 
 
-import bgdonut1 from './image/bg-donut-1.png'
-import bgdonut2 from './image/bg-donut-2.png'
 
 import { Pagination, EffectCoverflow, Autoplay  } from 'swiper'
 
@@ -11,32 +9,59 @@ import { Swiper, SwiperSlide } from 'swiper/react/swiper-react'
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
-import './Carousel.css'
+import './Experience.css'
 import 'swiper/swiper.min.css'
 import 'swiper/modules/pagination/pagination.min.css'
+import uno from '../../assets/png/1.jpeg';
+import dos from '../../assets/png/2.jpeg';
+import tres from '../../assets/png/3.jpeg';
+import cuatro from '../../assets/png/4.jpeg';
+import cinco from '../../assets/png/5.jpeg';
+import seis from '../../assets/png/6.jpeg';
+import siete from '../../assets/png/7.jpeg';
+import ocho from '../../assets/png/8.jpeg';
+import nueve from '../../assets/png/9.jpeg';
+import diez from '../../assets/png/10.jpeg';
 
 
 const slider = [
-  {
-      title: "Donut 1",
-      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
-      url: "https://onedrive.live.com/embed?resid=C478CFE9F71064A1%214384&authkey=%21ABaBOn6kvVZ3YCk&width=480&height=640"
+    {url: uno
     },
-    {
-      title: "Donut 2",
-      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
-      url: "https://onedrive.live.com/embed?resid=C478CFE9F71064A1%214386&authkey=%21AJMxGRUNLT1SFok&width=640&height=480"
+    { url: dos
     },
-    {
-      title: "Donut 3",
-      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
-      url: "https://onedrive.live.com/embed?resid=C478CFE9F71064A1%214385&authkey=%21AKaRNAgscdlz3_k&width=1600&height=1200"
+    { url: tres
     },
   
+    {url: cuatro
+    },
     {
-      title: "Donut 4",
+      title: "Donut 5",
       description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
-      url: "https://onedrive.live.com/embed?resid=C478CFE9F71064A1%214387&authkey=%21AI4jdn0SR6GF09A&width=1200&height=1600"
+      url: cinco
+    },
+    {
+      title: "Donut 6",
+      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
+      url: seis
+    },
+    {
+      title: "Donut 7",
+      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
+      url: siete
+    },
+    {
+      title: "Donut 8",
+      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
+      url: ocho
+    }, {
+      title: "Donut 9",
+      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
+      url: nueve
+    },
+    {
+      title: "Donut 10",
+      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
+      url: diez
     },
 ]
 
@@ -58,6 +83,7 @@ function Experience() {
             modifier: 3,
             slideShadows: true
         }}
+        color='#fffff'
         loop={true}
         pagination={{clickable: true}}
         slidesPerView={2}

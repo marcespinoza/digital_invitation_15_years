@@ -27,8 +27,7 @@ body {
   text-align: center;
 }
 .heading {
-  font-size: 35px;
-  font-family: 'Roboto-thin';
+  font-size: 25px;
   color: black;
 }
 .highlight {
@@ -43,7 +42,7 @@ body {
   margin: 20px 0;
 }
 .countdown-box {
-  background-color: #eb62b2;
+  background-color: palevioletred;
   font-size: 50px;
   font-weight: 700;
   color: #ffffff;

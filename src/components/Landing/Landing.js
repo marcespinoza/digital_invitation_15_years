@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import './Landing.css';
 import './neon.css';
-import backgroundLanding from '../../assets/png/backgroundlanding.jpg'
+import backgroundLanding from '../../assets/png/landing.png'
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 
