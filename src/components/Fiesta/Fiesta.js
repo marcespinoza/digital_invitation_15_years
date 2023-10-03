@@ -24,10 +24,11 @@ function Fiesta() {
 
     return (
         <div className="fiesta">
-             <Lottie options={defaultOptions} height={200} width={200} />
-            <div className="fiestaHeader">
+            <div >
                 <h2>FIESTA</h2>
             </div>
+            <div>
+            <Lottie options={defaultOptions} height={180} width={200}/></div>
             <div className="fiestaHeader">
              <p >
              ¡Te espero el Viernes 3 de noviembre de 22:00 a 05:00 hs para festejar este gran momento de mi vida!
@@ -39,7 +40,7 @@ function Fiesta() {
             </p>
             </div>
             <div>
-            <a href="https://www.google.com/maps/@-26.1593732,-58.1770433,3a,75y,120.29h,79.82t/data=!3m6!1e1!3m4!1s-lS55Yf1tE0YKBbdmLR8TQ!2e0!7i13312!8i6656?entry=ttu" target="_blank">
+            <a href="https://www.google.com/maps/place/UPCN+-+Formosa/@-26.177815,-58.1698866,17z/data=!3m1!4b1!4m6!3m5!1s0x945ca5e81a246505:0x4433f925df26ef93!8m2!3d-26.177815!4d-58.1673117!16s%2Fg%2F11fz959btb?entry=ttu" target="_blank">
                <button class="fiestaButton">Como llegar</button>
                </a>
             </div>

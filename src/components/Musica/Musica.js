@@ -25,7 +25,7 @@ function Musica() {
     return (
         <div className="musica">
             <div className="musicaHeader">
-                <h2>Música</h2>
+                <h2>MUSICA</h2>
             </div>
             <div className="musicaHeader">
              <p >
