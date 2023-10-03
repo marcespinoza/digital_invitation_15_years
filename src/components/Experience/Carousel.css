@@ -25,7 +25,7 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: 1rem;
-    color: #ffffff;
+    color: #717171;
 }
 
 .carousel-content h1 {
@@ -55,8 +55,8 @@
 
 .slider-btn {
     display: inline-block;
-    color: #ffffff;
-    background: palevioletred;
+    color: #717171;
+    background: #fff;
     padding: 0.625rem 1.875rem;
     margin-top: 2.125rem;
     text-decoration: none;
@@ -71,6 +71,23 @@
     color: #00a4aa;
 }
 
+.bgdonut1 {
+    position: fixed;
+    top: 0;
+    left: -8rem;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.bgdonut2 {
+    position: fixed;
+    bottom: -2rem;
+    right: -3rem;
+    z-index: -1;
+    width: 9.375rem;
+    opacity: 0.2;
+}
+
 .myswiper {
     width: 100%;
     padding-top: 3.125rem;
@@ -78,9 +95,8 @@
 
 .myswiper-slider {
     width: 18.75rem;
-    height: 38.125rem;
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: 28.125rem;
+    background-size: cover;
     background-position: center;
 }
 
@@ -95,7 +111,7 @@
     flex-direction: column;
     justify-content: flex-end;
     opacity: 1;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
 }
 
@@ -131,15 +147,4 @@
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
     background: #fff;
-}
-
-@media screen and (max-width: 600px){
-    .myswiper-slider {
-        width: 18.75rem;
-        height: 10.125rem;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-   
 }

@@ -24,7 +24,7 @@ function Asistencia() {
     return (
             <div className="asistencia">
                 <h1>CONFIRMACION DE ASISTENCIA</h1>
-            <div className="asistencia">
+            <div className="header">
              <p >
                    Cuento con tu presencia.
                    ¡Confirmá tu asistencia!

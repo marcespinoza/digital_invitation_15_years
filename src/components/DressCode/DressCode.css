@@ -109,6 +109,12 @@
     .dressCode-bodycontainer {
         gap: 1rem;
     }
+
+    .lottie-dress {
+        height: 100px;
+        width: 100px;
+    }
+    
 }
 
 @media screen and (max-width: 400px) {

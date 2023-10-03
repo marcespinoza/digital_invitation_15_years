@@ -27,8 +27,8 @@ function Fiesta() {
             <div >
                 <h2>FIESTA</h2>
             </div>
-            <div>
-            <Lottie options={defaultOptions} height={180} width={200}/></div>
+            <div className='lottie-fiesta'>
+            <Lottie options={defaultOptions} /></div>
             <div className="fiestaHeader">
              <p >
              ¡Te espero el Viernes 3 de noviembre de 22:00 a 05:00 hs para festejar este gran momento de mi vida!

@@ -35,7 +35,9 @@ function BackToTop() {
 
       const [playing, toggle] = useAudio(sound);
 
- 
+      useEffect(() => {
+        toggle();
+      }, []);
 
 
     const useStyles = makeStyles(() => ({

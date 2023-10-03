@@ -8,7 +8,7 @@
 
 .education-body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -95,7 +95,6 @@
 }
 
 
-
 @media (min-width: 992px) and (max-width: 1380px) {
 
 }
@@ -164,6 +163,11 @@
 @media screen and (max-width: 600px) {
     .education-description > h1{
         font-size: 2.5rem;
+    }
+
+    .lottie-ig-id   {
+        height: 100px;
+        width: 100px;
     }
 }
 

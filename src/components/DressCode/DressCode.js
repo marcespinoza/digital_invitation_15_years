@@ -23,7 +23,9 @@ function DressCode() {
 
     return (
         <div className="dressCode">
-             <Lottie options={defaultOptions} height={200} width={200} />
+            <div className='lottie-dress'>
+             <Lottie options={defaultOptions}  />
+             </div>
             <div className="dressCode-header">
                 <h2>DRESS CODE</h2>
             </div>
