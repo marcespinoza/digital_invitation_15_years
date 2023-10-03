@@ -23,14 +23,14 @@ function Asistencia() {
 
     return (
             <div className="asistencia">
-                <h1>Confirmación de asistencia</h1>
+                <h1>CONFIRMACION DE ASISTENCIA</h1>
             <div className="asistencia">
              <p >
                    Cuento con tu presencia.
                    ¡Confirmá tu asistencia!
             </p>
             <div className="asistencia">
-               <button class="neons">Confirmar asistencia</button>
+               <button class="asistenciaButton">Confirmar asistencia</button>
             </div>
             </div>
 

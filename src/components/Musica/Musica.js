@@ -33,7 +33,7 @@ function Musica() {
             </p>
             </div>
             <div>
-               <button class="neons">Sugerir canción</button>
+               <button class="music">Sugerir canción</button>
             </div>
         </div>
     )

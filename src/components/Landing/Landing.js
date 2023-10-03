@@ -23,7 +23,7 @@ function Landing() {
                         style={{ color: theme.tertiary }}
                     >
                         <h1 class="neon"> {headerData.name}</h1>
-                        <h6>{headerData.title}</h6>
+                        <h6 class="flicker" > <span class="fast-flicker">M</span>is<span class="flicker"> 1</span>5</h6>
 
                     </div>
                 </div>

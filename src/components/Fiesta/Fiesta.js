@@ -26,7 +26,7 @@ function Fiesta() {
         <div className="fiesta">
              <Lottie options={defaultOptions} height={200} width={200} />
             <div className="fiestaHeader">
-                <h2>Fiesta</h2>
+                <h2>FIESTA</h2>
             </div>
             <div className="fiestaHeader">
              <p >

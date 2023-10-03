@@ -103,8 +103,8 @@
   }
    
   .fiestaButton:hover{
-      background-color:var(--clr-neon);
-      color:#fff;
+      background-color:white;
+      color:#050505;      
   }
 
 
