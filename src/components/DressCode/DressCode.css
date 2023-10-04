@@ -6,6 +6,8 @@
     background-color: palevioletred;
     justify-content: flex-start;
     padding: 3.7rem;
+    min-height: 100px;
+    overflow: hidden;
 }
 
 .dressCode-header {

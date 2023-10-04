@@ -208,12 +208,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url("../../assets/png/hashtagwallpaper.jpg");
+    min-height: 20vh;
 }
 
-.bgimg-1 {
-    background-image: url("../../assets/png/hashtagwallpaper.jpg");
-    min-height: 40vh;
-}
 
 .caption {
     position: absolute;
