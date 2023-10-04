@@ -76,14 +76,12 @@
 .lcr--content h6 {
   font-weight: 500;
   font-size: 2.25rem;
-  margin-bottom: -0.85rem;
   opacity: 0.8;
 }
 
 .lcr--content h1 {
   font-weight: 600;
   font-size: 5.25rem;
-  line-height: 110%;
   margin: 1rem 0;
 }
 
@@ -193,7 +191,6 @@
     padding: 0 2rem;
   }
   .lcr--content {
-    margin-top: 20%;
     margin-right: initial;
     width: 100%;
   }
@@ -222,11 +219,7 @@
   }
 }
 
-@media (max-width: 500px) {
-  .lcr--content {
-    margin-top: 35%;
-  }
-}
+
 @media (max-width: 370px) {
   .lcr--content {
     margin-top: 60%;

@@ -141,5 +141,15 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    .myswiper {
+        width: 100%;
+        padding-top: 1.125rem;
+    }
+
+    .carousel {
+        min-height: 50vh;
+        column-gap: 3rem;
+    }
    
 }

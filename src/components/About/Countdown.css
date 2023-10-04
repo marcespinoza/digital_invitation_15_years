@@ -19,13 +19,14 @@ body {
 }
 .page {
   width: 100%;
-  height: 40vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 .heading {
   font-size: 25px;
   color: black;
@@ -149,6 +150,16 @@ a {
 
 @media screen and (max-width: 600px){
 
+  .page {
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   .countdown-box {
     background-color: palevioletred;
     font-size: 30px;
@@ -169,5 +180,11 @@ a {
     font-size: 10px;
     color: #000000;
     font-family: 'Roboto-medium';
+  }
+
+  .heading{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: black;
   }
 }

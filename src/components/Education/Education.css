@@ -25,7 +25,7 @@
 }
 
 .education-description > h1{
-    font-size: 3.5rem;
+    font-size: 2.0rem;
     font-family: 'Popins-thin100';
     color: rgb(7, 7, 7);
     margin-bottom: 2rem;
@@ -94,6 +94,15 @@
     width: 100%;
 }
 
+.lottie-ig-id   {
+    height: 300px;
+    width: 300px;
+}
+
+.ig-account {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
 
 @media (min-width: 992px) and (max-width: 1380px) {
 
@@ -161,13 +170,21 @@
 }
 
 @media screen and (max-width: 600px) {
-    .education-description > h1{
-        font-size: 2.5rem;
+    .education-description h1{
+        font-size: 0.9rem;
+        margin-bottom: 0rem;
+
     }
 
     .lottie-ig-id   {
         height: 100px;
         width: 100px;
+    }
+
+    .ig-account {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        font-family: 'Roboto-medium';
     }
 }
 
@@ -195,7 +212,7 @@
 
 .bgimg-1 {
     background-image: url("../../assets/png/hashtagwallpaper.jpg");
-    min-height: 50vh;
+    min-height: 40vh;
 }
 
 .caption {

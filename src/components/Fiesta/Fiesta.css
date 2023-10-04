@@ -19,9 +19,9 @@
 }
 
 .fiesta h2 {
-    margin-top: 2.5rem;
+    margin-top: 2.0rem;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     text-align: center;
 }
 
@@ -219,6 +219,13 @@
     .lottie-fiesta {
         height: 100ox;
         width: 100px;
+    }
+
+    .fiesta h2 {
+        margin-top: 1.0rem;
+        font-style: normal;
+        font-size: 1.0rem;
+        text-align: center;
     }
       
 }

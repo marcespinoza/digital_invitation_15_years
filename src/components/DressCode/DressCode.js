@@ -23,15 +23,15 @@ function DressCode() {
 
     return (
         <div className="dressCode">
-            <div className='lottie-dress'>
-             <Lottie options={defaultOptions}  />
-             </div>
             <div className="dressCode-header">
                 <h2>DRESS CODE</h2>
             </div>
+            <div className='lottie-dress'>
+             <Lottie options={defaultOptions}  />
+             </div>            
             <div className="dressCode-header">
              <p >
-               L-gante
+               Elegante
             </p>
             </div>
         </div>

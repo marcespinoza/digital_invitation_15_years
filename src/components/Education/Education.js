@@ -22,15 +22,17 @@ function Education() {
     return (
         <div className="bgimg-1">
             <div className="education-body">
-                <div className="education-description"> 
-
-                <h1>@anaa_xd2 #15analilen</h1>     </div>
                 <div className="education-description">
-                    ¡Preparate para esta gran fiesta!
+                    <h1>
+                    ¡Preparate para esta gran fiesta! <br />
                     Seguime y etiquetame en tus fotos y videos.
+                    </h1>
                 </div>
                 <div className="lottie-ig-id">
                   <Lottie options={defaultOptions} />              
+                </div>
+                <div className='ig-account'>
+                  @anaa_xd2
                 </div>
             </div>
         </div>

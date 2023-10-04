@@ -114,6 +114,9 @@
         height: 100px;
         width: 100px;
     }
+    .dressCode-header h2 {
+        font-size: 1rem;
+    }
     
 }
 
