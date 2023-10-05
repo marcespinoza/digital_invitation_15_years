@@ -119,9 +119,9 @@
         color: black;
         background-color: rgb(255, 255, 255);
         justify-content: flex-start;
-        min-height: 10vh;
         overflow-x: hidden;
         padding: 1rem;
+        overflow: hidden;
     }
 
     .asistencia h1 {

@@ -135,8 +135,8 @@
 
 @media screen and (max-width: 600px){
     .myswiper-slider {
-        width: 18.75rem;
-        height: 10.125rem;
+        width: 28.75rem;
+        height: 15.125rem;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -144,11 +144,11 @@
 
     .myswiper {
         width: 100%;
-        padding-top: 1.125rem;
+        padding-top: 0.125rem;
     }
 
     .carousel {
-        min-height: 50vh;
+        min-height: 20vh;
         column-gap: 3rem;
     }
    

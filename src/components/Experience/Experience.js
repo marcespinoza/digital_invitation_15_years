@@ -30,38 +30,20 @@ const slider = [
     { url: dos
     },
     { url: tres
-    },
-  
+    },  
     {url: cuatro
     },
-    {
-      title: "Donut 5",
-      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
-      url: cinco
+    {url: cinco
     },
-    {
-      title: "Donut 6",
-      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
-      url: seis
+    {url: seis
     },
-    {
-      title: "Donut 7",
-      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
-      url: siete
+    {url: siete
     },
-    {
-      title: "Donut 8",
-      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
-      url: ocho
-    }, {
-      title: "Donut 9",
-      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
-      url: nueve
+    {url: ocho
+    }, 
+    {url: nueve
     },
-    {
-      title: "Donut 10",
-      description: "Our Donut Collection Offers a Mouthwatering Array of Flavors, Toppings, and Shapes for Every Craving and Occasion.",
-      url: diez
+    {url: diez
     },
 ]
 
@@ -69,13 +51,16 @@ function Experience() {
   return (
     <div className='carousel'>
 
-        <Swiper 
-        
+        <Swiper         
         className='myswiper'
         modules={[Pagination, EffectCoverflow, Autoplay]}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         coverflowEffect={{
             rotate: 0,
             stretch: 0,
