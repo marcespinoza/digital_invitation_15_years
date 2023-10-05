@@ -9,9 +9,9 @@
     position: relative;
     width: calc(min(90rem, 90%));
     margin: 0 auto;
-    min-height: 70vh;
+    min-height: 50vh;
     column-gap: 3rem;
-    padding-block: min(20vh, 3rem);
+    padding-block: min(20vh, 1rem);
 }
 
 @media screen and (min-width: 48rem) {
@@ -136,7 +136,7 @@
 @media screen and (max-width: 600px){
     .myswiper-slider {
         width: 28.75rem;
-        height: 15.125rem;
+        height: 20.125rem;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
