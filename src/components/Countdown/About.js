@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Countdown from '../About/Countdown';
+import Countdown from './Countdown';
 import { Link } from 'react-router-dom';
 import './Countdown.css';
 

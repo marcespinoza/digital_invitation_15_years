@@ -150,11 +150,12 @@
     font-size: 2.5rem;
   }
 
-    .about-description > p{
-      font-size: 0.95rem;
-    }
+  .about-description > p{
+    font-size: 0.95rem;
+  }
 
-    .about-img > img {
-        width: 200px;
-    }
+  .about-img > img {
+      width: 200px;
+  }
+  
 }

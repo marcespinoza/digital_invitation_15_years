@@ -1,5 +1,5 @@
 import React from 'react';
-import Wish from './../../utils/Wish';
+import Wish from '../../utils/Wish';
 
 
 const Countdown = ({ countdownData, name }) => {

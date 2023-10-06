@@ -152,7 +152,7 @@ a {
 
   .page {
     width: 100%;
-    min-height: 30vh;
+    min-height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,8 +183,16 @@ a {
   }
 
   .heading{
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 1rem;
     color: black;
+  }
+  .countdown-wrapper {
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2px 0;
   }
 }
