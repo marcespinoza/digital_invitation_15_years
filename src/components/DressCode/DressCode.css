@@ -1,12 +1,14 @@
 .dressCode {
-    min-height: 30vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: palevioletred;
-    justify-content: flex-start;
-    padding: 3.7rem;
-    min-height: 100px;
+    justify-content: center;
+    background-image: url('../../assets/png/dress_code.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
 }
 

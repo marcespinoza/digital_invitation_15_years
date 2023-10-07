@@ -6,8 +6,8 @@ const Countdown = ({ countdownData, name }) => {
   if (!countdownData.isItBday) {
     return (
       <div>
-        <h1 className='heading'>
-          FALTAN
+        <h1 className='neonCountDown'>
+          Faltan
         </h1>
         <div className='countdown-wrapper'>
           <div className='countdown-box'>

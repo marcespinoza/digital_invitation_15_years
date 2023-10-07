@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 .landing {
   height: 100vh;
   display: flex;
@@ -11,7 +12,7 @@
   justify-content: center;
   height: 100%;
   width: 100%;
-  position: relative;
+  position: fixed;
 }
 
 .landing--img {
@@ -52,7 +53,7 @@
   background-color: #000000;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -62,20 +63,21 @@
 .lcr--content {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
   font-family: var(--primaryFont);
   font-style: normal;
 }
 
 .lcr--content h6 {
   font-weight: 500;
-  font-size: 2.25rem;
+  font-size: 4.25rem;
   opacity: 0.8;
+  text-align: center;
 }
 
 .lcr--content h1 {
+  font-family: "Yellowtail";
   font-weight: 600;
-  font-size: 5.25rem;
+  font-size: 9.25rem;
   margin: 1rem 0;
 }
 
@@ -119,29 +121,26 @@
   }
   .landing--container-right {
     box-sizing: border-box;
-    padding: 0 2rem;
     flex: initial;
     height: 100%;
     width: 100%;
     background-color: #eaeaea;
     align-items: center;
     justify-content: center;
-    padding: 0 2rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .lcr--content {
     margin-right: initial;
-    margin-top: 30%;
     width: 100%;
   }
   .lcr--content h6 {
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
   }
   .lcr--content h1 {
-    font-size: 2.0rem;
+    font-size: 5.0rem;
     text-align: center;
   }
   .lcr--content p {

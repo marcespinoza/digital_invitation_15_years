@@ -5,8 +5,8 @@
     background-attachment: fixed;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    min-height: 40vh;
+    justify-content: center;
+    height: 100%;
     padding: 0.5rem 2rem 2rem 2rem;
     color: rgb(252, 252, 252);
 }
@@ -243,12 +243,6 @@
         font-style: normal;
         font-size: 1.0rem;
         text-align: center;
-        text-shadow: 
-        0 0 5px palevioletred,
-        0 0 10px palevioletred,
-        0 0 20px palevioletred,
-        0 0 40px palevioletred,
-        0 0 80px palevioletred;
     }
       
 }

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 .education {
     min-height: 50vh;
     background-image: url("../../assets/png/hashtagwallpaper.jpg");
@@ -11,8 +14,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    color: black;
+    height: 100vh;
     width: 100%;
 }
 
@@ -25,11 +27,20 @@
 }
 
 .education-description > h1{
-    font-size: 2.0rem;
-    font-family: 'Popins-thin100';
-    color: rgb(7, 7, 7);
+    font-size: 3rem;
+    font-family: 'Tilt Neon';
     margin-bottom: 2rem;
     text-align: center;
+    color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
 }
 
 .education-card {
@@ -102,6 +113,17 @@
 .ig-account {
     margin-bottom: 2rem;
     font-size: 3rem;
+    font-family: 'Tilt Neon';
+    color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
 }
 
 @media (min-width: 992px) and (max-width: 1380px) {
@@ -171,7 +193,7 @@
 
 @media screen and (max-width: 600px) {
     .education-description h1{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin-bottom: 0rem;
 
     }
@@ -208,8 +230,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../../assets/png/hashtagwallpaper.jpg");
-    min-height: 20vh;
+    background-image: url("../../assets/png/neon.jpg");
+    height: 100vh;
 }
 
 

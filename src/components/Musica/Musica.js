@@ -25,14 +25,11 @@ function Musica() {
     return (
         <div className="musica">
             <div className="musicaHeader">
-                <h2>MUSICA</h2>
-            </div>
-            <div className="musicaHeader">
              <p >
              ¡Ayudame sugiriendo las canciones que pensás que no pueden faltar en la fiesta!
             </p>
             </div>
-            <div>
+            <div className='buttonMusic'>
                <button class="music">Sugerir canción</button>
             </div>
         </div>

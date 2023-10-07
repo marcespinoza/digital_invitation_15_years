@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
 .musica {
     display: flex;
-    background-color: #f1f1f1;
+    background-image: url('../../assets/png/neon_music.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    min-height: 30vh;
+    height: 100vh;
     padding: 2.5rem 2rem 2rem 2rem;
     color: black;
 }
 
 .musicaHeader {
     margin-top: 0.5rem;
+    width: 100%;
     display: flex;
     align-items: center;
     margin-bottom: 2%;
@@ -18,11 +24,22 @@
     color: rgb(8, 8, 8);
 }
 
-.musicaHeader h2 {
-    font-family: 'Open sans', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    color: palevioletred;
+.musicaHeader p {
+    font-size: 3.0rem;
+    text-align: left;
+    font-weight:600; 
+    color: white;
+    font-family: 'Dosis';
+    justify-content: center ;
+    text-shadow:
+      0 0 4px #24c0fd,
+      0 0 11px #24c0fd,
+      0 0 19px #24c0fd,
+      0 0 40px #24c0fd,
+      0 0 80px #2194f1,
+      0 0 90px #2194f1,
+      0 0 100px #2194f1,
+      0 0 150px #1690f3;
 }
 
 .musicaContainer {
@@ -95,11 +112,24 @@
     cursor: pointer;
     font-family: "Roboto-light";
     text-decoration: none;
-    color: #eb62b2;
     border: #eb62b2 3px solid;
     background-color:transparent;
     border-radius: 1.5em;
     transition:all 0.5s;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+        0 0 5px palevioletred,
+        0 0 10px palevioletred,
+        0 0 20px palevioletred,
+        0 0 40px palevioletred,
+        0 0 80px palevioletred;
+  }
+
+  .buttonMusic {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
   }
    
   .music:hover{
@@ -181,12 +211,12 @@
 
     .musicaHeader h2 {
         font-size: 1rem;
-
     }
 
     .musicaHeader p{
         text-align: center;
         font-size: 0.8rem;
+        font-family: 'Tilt Neon';
     }
 
     .musica--box h3 {
