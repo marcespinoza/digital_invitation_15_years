@@ -205,20 +205,20 @@
     }
 
     .education-body h1{
-        font-size: 1.5rem;
+        font-size: 1.0rem;
         text-align: center;
         color: #fff;
         display: flex;
         position:initial;
         text-shadow:
-      0 0 4px #24c0fd,
-      0 0 11px #24c0fd,
-      0 0 19px #24c0fd,
-      0 0 40px #24c0fd,
-      0 0 80px #2194f1,
-      0 0 90px #2194f1,
-      0 0 100px #2194f1,
-      0 0 150px #2194f1;
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #bc13fe,
+      0 0 80px #bc13fe,
+      0 0 90px #bc13fe,
+      0 0 100px #bc13fe,
+      0 0 150px #bc13fe;
     }
     .education-body {
         display: flex;

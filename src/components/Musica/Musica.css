@@ -34,14 +34,14 @@
     font-family: 'Dosis';
     justify-content: center ;
     text-shadow:
-      0 0 4px #24c0fd,
-      0 0 11px #24c0fd,
-      0 0 19px #24c0fd,
-      0 0 40px #24c0fd,
-      0 0 80px #2194f1,
-      0 0 90px #2194f1,
-      0 0 100px #2194f1,
-      0 0 150px #1690f3;
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #bc13fe,
+                0 0 82px #bc13fe,
+                0 0 92px #bc13fe,
+                0 0 102px #bc13fe,
+                0 0 151px #bc13fe;
 }
 
 .musicaContainer {
@@ -114,9 +114,6 @@
     cursor: pointer;
     font-family: "Roboto-light";
     text-decoration: none;
-    border: #eb62b2 3px solid;
-    background-color:transparent;
-    border-radius: 1.5em;
     transition:all 0.5s;
     color: rgb(255, 255, 255);
     text-shadow: 
@@ -217,8 +214,9 @@
 
     .musicaHeader p{
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.0rem;
         font-family: 'Tilt Neon';
+        margin-bottom: 0.3rem;
     }
 
     .musica--box h3 {
@@ -234,33 +232,44 @@
             text-align: center;
             justify-content: center;
             color: #fff;
-            text-shadow:
-                0 0 7px #fff,
-                0 0 10px #fff,
-                0 0 21px #fff,
-                0 0 42px #bc13fe,
-                0 0 82px #bc13fe,
-                0 0 92px #bc13fe,
-                0 0 102px #bc13fe,
-                0 0 151px #bc13fe;
+                text-shadow:
+                    0 0 7px #fff,
+                    0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 42px #bc13fe,
+                    0 0 82px #bc13fe,
+                    0 0 92px #bc13fe,
+                    0 0 102px #bc13fe,
+                    0 0 151px #bc13fe;
     }
 
     .music {
         font-size:15px;
         height:30px;
         width:200px;
-        margin-bottom: 15px;
         display:flex;
+        margin-bottom: 15px;    
         justify-content:center;
         align-items:center;
         cursor: pointer;
         font-family: "Roboto-light";
         text-decoration: none;
-        color: #eb62b2;
-        border: #eb62b2 1px solid;
-        background-color:transparent;
-        border-radius: 1.5em;
-        transition:all 0.5s;
+        background: transparent;
+        border-radius: 1.25em;
+        text-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe; 
+  
+        border: currentColor 0.125em solid;
+        box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe; 
       }
 }
 
