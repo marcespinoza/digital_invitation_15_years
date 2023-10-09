@@ -8,6 +8,7 @@
     background-image: url('../../assets/png/neon_music.jpg');
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
