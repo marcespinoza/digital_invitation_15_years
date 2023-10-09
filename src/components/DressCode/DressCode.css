@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
 .dressCode {
     height: 100vh;
     display: flex;
@@ -107,8 +109,22 @@
         font-size: 2.5rem;
         margin-bottom: 20px;
     }
-    .dressCode-body p{
-        width: 80%;
+    .dressCode-header p{
+        width: 100%;
+        font-family: 'Tilt Neon';
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: #fff;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #bc13fe,
+            0 0 82px #bc13fe,
+            0 0 92px #bc13fe,
+            0 0 102px #bc13fe,
+            0 0 151px #bc13fe;
     }
     .dressCode-bodycontainer {
         gap: 1rem;
@@ -119,7 +135,21 @@
         width: 100px;
     }
     .dressCode-header h2 {
-        font-size: 1rem;
+        margin-top: 1.0rem;
+        font-style: normal;
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: 'Yellowtail';
+        color: white;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #bc13fe,
+            0 0 82px #bc13fe,
+            0 0 92px #bc13fe,
+            0 0 102px #bc13fe,
+            0 0 151px #bc13fe;
     }
     
 }

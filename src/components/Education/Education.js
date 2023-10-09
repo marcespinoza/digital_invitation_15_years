@@ -20,7 +20,6 @@ function Education() {
      };
     const { theme } = useContext(ThemeContext);
     return (
-        <div className="bgimg-1">
             <div className="education-body">
                 <div className="education-description">
                     <h1>
@@ -35,7 +34,6 @@ function Education() {
                   @anaa_xd2
                 </div>
             </div>
-        </div>
     )
 }
 

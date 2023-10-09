@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
 .fiesta {
     display: flex;
-    background-image: url("../../assets/png/wall.jpg");
+    background-image: url("../../assets/png/neon_dancing.jpg");
+    background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -19,12 +24,15 @@
     justify-content: center; 
     font-family: 'Tilt Neon';
     color: rgb(255, 255, 255);
-    text-shadow: 
-        0 0 5px palevioletred,
-        0 0 10px palevioletred,
-        0 0 20px palevioletred,
-        0 0 40px palevioletred,
-        0 0 80px palevioletred;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
 }
 
 .fiesta h2 {
@@ -32,6 +40,16 @@
     font-style: normal;
     font-size: 3.5rem;
     text-align: center;
+    color: white;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
     
 }
 
@@ -208,13 +226,21 @@
         font-family: "Roboto-light";
         text-decoration: none;
         background: transparent;
-        color: var(--clr-neon);
         border-radius: 1.25em;
+        text-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe; 
+  
         border: currentColor 0.125em solid;
-        text-shadow: 0 0 0.125em hsl(0 0%
-        100% / 0.3), 0 0 0.45em currentColor;
-        box-shadow: inset 0 0 0.5em 0 var(--clr-neon),
-         0 0 0.5em 0 var(--clr-neon);
+        box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe; 
       }
 
       .fiestaHeader{
@@ -227,7 +253,7 @@
         margin-top: 0.5rem;
         align-items: center;
         text-align: center;
-        font-size: 12px;
+        font-size: 1rem;
         font-family: "Tilt Neon";
         justify-content: center; 
         color: rgb(255, 255, 255);
@@ -241,8 +267,19 @@
     .fiesta h2 {
         margin-top: 1.0rem;
         font-style: normal;
-        font-size: 1.0rem;
+        font-size: 2.5rem;
         text-align: center;
+        font-family: 'Yellowtail';
+        color: white;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #bc13fe,
+            0 0 82px #bc13fe,
+            0 0 92px #bc13fe,
+            0 0 102px #bc13fe,
+            0 0 151px #bc13fe;
     }
       
 }

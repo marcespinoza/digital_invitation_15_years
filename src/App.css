@@ -46,7 +46,7 @@ figure {
 
 .hero {
   position: relative;
-  width: 100vw;
+  width: 100v;
   height: 100vh;
 }
 
@@ -87,69 +87,10 @@ figure {
   }
 }
 
-.content {
-  position: relative;
-  margin: 0 auto 8rem;
-  padding: 2rem;
-}
-.content:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background-color: white;
-  z-index: 99;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
 
-.content__inner {
-  margin: 0 auto;
-  max-width: 700px;
+html, body {
+  overflow-x: hidden;
 }
-.content__inner > * + * {
-  margin-top: 1.5rem;
-}
-.content__inner > blockquote {
-  margin: 3rem 0;
-}
-
-.content__title {
-  font-family: "Courgette", serif;
-  font-size: 3rem;
-  line-height: 1.25;
-  letter-spacing: -0.125rem;
-  text-align: center;
-}
-@media (min-width: 600px) {
-  .content__title {
-    font-size: 4rem;
-  }
-}
-
-.content__author {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 4rem;
-  width: 100%;
-  font-family: "Courgette", serif;
-  font-size: 1.5rem;
-  letter-spacing: -0.125rem;
-  text-align: center;
-}
-.content__author:before, .content__author:after {
-  content: "";
-  flex: 1;
-  height: 2px;
-  background-color: #A9DFBF;
-}
-.content__author:before {
-  margin-right: 1rem;
-}
-.content__author:after {
-  margin-left: 1rem;
+body {
+  position: relative
 }

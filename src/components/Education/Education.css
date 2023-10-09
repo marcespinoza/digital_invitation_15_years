@@ -16,17 +16,14 @@
     justify-content: center;
     height: 100vh;
     width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../assets/png/neon_selfie.jpg");
 }
 
-.education-description {
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.education-description > h1{
+.education-body h1{
     font-size: 3rem;
     font-family: 'Tilt Neon';
     margin-bottom: 2rem;
@@ -192,21 +189,48 @@
 }
 
 @media screen and (max-width: 600px) {
-    .education-description h1{
-        font-size: 0.8rem;
-        margin-bottom: 0rem;
-
-    }
 
     .lottie-ig-id   {
         height: 100px;
         width: 100px;
+        align-items: center;
+        align-content: center;
     }
 
     .ig-account {
-        margin-bottom: 1rem;
+        align-items: center;
+        align-content: center;
         font-size: 1rem;
         font-family: 'Roboto-medium';
+    }
+
+    .education-body h1{
+        font-size: 1.5rem;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        position:initial;
+        text-shadow:
+      0 0 4px #24c0fd,
+      0 0 11px #24c0fd,
+      0 0 19px #24c0fd,
+      0 0 40px #24c0fd,
+      0 0 80px #2194f1,
+      0 0 90px #2194f1,
+      0 0 100px #2194f1,
+      0 0 150px #2194f1;
+    }
+    .education-body {
+        display: flex;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        width: 100%;
     }
 }
 
@@ -232,6 +256,7 @@
     background-size: cover;
     background-image: url("../../assets/png/neon.jpg");
     height: 100vh;
+    width: 100vh;
 }
 
 

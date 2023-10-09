@@ -148,8 +148,15 @@
     }
 
     .carousel {
-        min-height: 20vh;
+        min-height: 100vh;
+        width: 100vh;
         column-gap: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../../assets/png/neon_carrousel.jpg');
+        background-size: cover;
+        background-attachment: fixed;
     }
    
 }
