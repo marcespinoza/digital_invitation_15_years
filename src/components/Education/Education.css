@@ -1,20 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
-.education {
-    min-height: 50vh;
-    background-image: url("../../assets/png/hashtagwallpaper.jpg");
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: 0%;
-}
 
 .education-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -221,16 +214,16 @@
       0 0 150px #bc13fe;
     }
     .education-body {
-        display: flex;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-image: url("../../assets/png/neon_selfie.jpg");
         flex-direction: column;
         align-items: center;
-        position: relative;
         justify-content: center;
         width: 100%;
+        height: 100vh;
     }
 }
 

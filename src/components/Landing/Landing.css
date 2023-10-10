@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
 .landing {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('../../assets/png/landing.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .landing--container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
   width: 100%;
-  position: fixed;
 }
 
 .landing--img {
@@ -48,7 +50,6 @@
 }
 
 .landing--container-right {
-  flex: 65%;
   height: 100%;
   background-color: #000000;
   background-position: center;
@@ -56,7 +57,6 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: center;
 }
 
@@ -119,17 +119,17 @@
   .landing--social {
     display: none;
   }
-  .landing--container-right {
+  .landing--container{
     box-sizing: border-box;
     flex: initial;
     height: 100%;
     width: 100%;
-    background-color: #eaeaea;
     align-items: center;
     justify-content: center;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../../assets/png/landing.png');
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
   }
   .lcr--content {
     margin-right: initial;
@@ -348,4 +348,24 @@
   }
 }
 
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
 
+      text-shadow:
+      0 0 4px #24c0fd,
+      0 0 11px #24c0fd,
+      0 0 19px #24c0fd,
+      0 0 40px #24c0fd,
+      0 0 80px #2194f1,
+      0 0 90px #2194f1,
+      0 0 100px #2194f1,
+      0 0 150px #2194f1;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}

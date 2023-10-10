@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import { ThemeContext } from './contexts/ThemeContext';
 import { BackToTop } from './components'
 import Countdown  from './components/About/Countdown';
-import ScrollToTop from './utils/ScrollToTop'
-import sound from "./assets/music/taylor.mp3"
+import { Main, BlogPage, ProjectPage } from './pages'
+
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 import backgroundLanding from './assets/png/landing.png'
 import { headerData } from './data/headerData';
@@ -153,157 +153,15 @@ const dressOptions = {
   // console.log = console.warn = console.error = () => {};
 
   return (
-    <div className="app">
-<section class="hero">
-  <div class="hero-inner" id="section-0">
-    <figure></figure>
-    <div className='landing'>
-            <div className='landing--container'>
-              
-                <div
-                    className='landing--container-right'
-                    style={{ backgroundImage: `url(${backgroundLanding})`}}
-                >
-                    <div
-                        className='lcr--content'
-                        style={{ color: theme.tertiary }}
-                    >
-                        <h1 class="neon"> {headerData.name}</h1>
-                        <h6 class="flicker" > <span class="fast-flicker">M</span>is<span class="flicker"> 1</span>5</h6>
+  <div className="app">
+  <Router>
+    <Switch>
+      <Route path="/" exact component={Main} />
 
-                    </div>
-                </div>
-            </div>
-        </div>
-  </div>
-</section>
-
-<section class="hero">
-    <div className='page'>
-      <Countdown countdownData={state} name={name} />      
-    </div>
-</section>
-
-<section class="hero">
-      <div className="education-body">
-                    <h1>
-                    ¡Preparate para esta gran fiesta! <br />
-                    Seguime y etiquetame en tus fotos y videos.
-                    </h1>
-                <div className="lottie-ig-id">
-                  <Lottie options={defaultOptions} />              
-                </div>
-                <div className='ig-account'>
-                  @anaa_xd2
-                </div>
-        </div>
-</section>
-
-<section class="hero">
-  <div className="musica">
-    <h1>MUSICA</h1>
-      <div className="musicaHeader">
-      <p >
-      ¡Ayudame sugiriendo las canciones que pensás 
-      <br />
-      que no pueden faltar en la fiesta!
-      </p>
-      </div>
-      <div className='buttonMusic'>
-        <button class="music">Sugerir canción</button>
-      </div>
-   </div>
-</section>
-
-<section class="hero">
-    <div className="fiesta">
-            <div >
-                <h2>FIESTA</h2>
-            </div>
-            <div className="fiestaHeader">
-             <p >
-             ¡Te espero el viernes 03/11/23, salón upcn, sito en belgrano, para festejar este gran momento de mi vida!
-             <br />
-                Clickeá en el botón de abajo y encontrá las indicaciones para llegar al lugar
-
-            </p>
-            </div>
-            <div>
-            <a href="https://www.google.com/maps/place/UPCN+-+Formosa/@-26.177815,-58.1698866,17z/data=!3m1!4b1!4m6!3m5!1s0x945ca5e81a246505:0x4433f925df26ef93!8m2!3d-26.177815!4d-58.1673117!16s%2Fg%2F11fz959btb?entry=ttu" target="_blank">
-               <button class="fiestaButton">Como llegar</button>
-               </a>
-            </div>
-        </div>
-</section>
-
-<section class="hero">
-      <div className='carousel'>
-
-          <Swiper         
-          className='myswiper'
-          modules={[Pagination, EffectCoverflow, Autoplay]}
-          effect={"coverflow"}
-          grabCursor={true}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 3,
-              slideShadows: true
-          }}
-          color='#fffff'
-          loop={true}
-          pagination={{clickable: true}}
-          slidesPerView={2}
-          >
-              {
-                  slider.map(data => (
-                      <SwiperSlide style={{ backgroundImage: `url(${data.url})` }} className="myswiper-slider">
-                    
-                      </SwiperSlide>
-                  ))
-              }
-          </Swiper>
-
-      </div>
-</section>
-
-<section class="hero">
-    <div className="dressCode">
-            <div className="dressCode-header">
-                <h2>DRESS CODE</h2>
-            </div>           
-            <div className="dressCode-header">
-             <p >
-               Sport Elegante
-            </p>
-            </div>
-        </div>
-</section>
-
-<section class="hero">
-    <div className="asistencia">
-                <h1>CONFIRMACION DE ASISTENCIA</h1>
-            <div className="header">
-             <p >
-                   Cuento con tu presencia.
-                   ¡Confirmá tu asistencia!
-            </p>
-            <div >
-                <a href="https://forms.gle/bVPjxo125CCv8wzu9">
-               <button class="asistenciaButton">Confirmar asistencia</button>
-               </a>
-            </div>
-            </div>
-
-     </div>
-</section>
-    </div>
+      <Redirect to="/" />
+    </Switch>
+  </Router>
+</div>
   );
 }
 

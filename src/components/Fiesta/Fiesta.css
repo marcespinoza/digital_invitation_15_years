@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
     padding: 0.5rem 2rem 2rem 2rem;
     color: rgb(252, 252, 252);
 }
@@ -146,10 +146,7 @@
 
 
 @media screen and (max-width: 992px) {
-    .fiesta {
-        padding: 1rem;
-        min-height: 100%;
-    }
+  
     .fiestaContainer {
         padding: 1rem;
         margin: 1rem 0;
@@ -177,9 +174,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .fiesta {
-        padding: 0.5rem;
-    }
+   
     .fiestaContainer {
         padding: 0.5rem;
     }

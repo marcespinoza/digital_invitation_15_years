@@ -25,13 +25,10 @@ function DressCode() {
         <div className="dressCode">
             <div className="dressCode-header">
                 <h2>DRESS CODE</h2>
-            </div>
-            <div className='lottie-dress'>
-             <Lottie options={defaultOptions}  />
-             </div>            
+            </div>           
             <div className="dressCode-header">
              <p >
-               Elegante
+               Sport Elegante
             </p>
             </div>
         </div>

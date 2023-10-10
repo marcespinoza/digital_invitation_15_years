@@ -22,21 +22,21 @@ function Asistencia() {
      };
 
     return (
-            <div className="asistencia">
-                <h1>CONFIRMACION DE ASISTENCIA</h1>
-            <div className="header">
-             <p >
-                   Cuento con tu presencia.
-                   ¡Confirmá tu asistencia!
-            </p>
-            <div className="asistencia">
-                <a href="https://forms.gle/bVPjxo125CCv8wzu9">
-               <button class="asistenciaButton">Confirmar asistencia</button>
-               </a>
-            </div>
-            </div>
+        <div className="asistencia">
+        <h1>CONFIRMACION DE ASISTENCIA</h1>
+    <div className="header">
+     <p >
+           Cuento con tu presencia.
+           ¡Confirmá tu asistencia!
+    </p>
+    <div >
+        <a href="https://forms.gle/bVPjxo125CCv8wzu9">
+       <button class="asistenciaButton">Confirmar asistencia</button>
+       </a>
+    </div>
+    </div>
 
-            </div>
+</div>
     )
 }
 

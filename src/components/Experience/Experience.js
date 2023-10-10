@@ -51,38 +51,38 @@ function Experience() {
   return (
     <div className='carousel'>
 
-        <Swiper         
-        className='myswiper'
-        modules={[Pagination, EffectCoverflow, Autoplay]}
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 3,
-            slideShadows: true
-        }}
-        color='#fffff'
-        loop={true}
-        pagination={{clickable: true}}
-        slidesPerView={2}
-        >
-            {
-                slider.map(data => (
-                    <SwiperSlide style={{ backgroundImage: `url(${data.url})` }} className="myswiper-slider">
-                  
-                    </SwiperSlide>
-                ))
-            }
-        </Swiper>
+    <Swiper         
+    className='myswiper'
+    modules={[Pagination, EffectCoverflow, Autoplay]}
+    effect={"coverflow"}
+    grabCursor={true}
+    centeredSlides={true}
+    autoplay={{
+      delay: 2500,
+      disableOnInteraction: false,
+    }}
+    coverflowEffect={{
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 3,
+        slideShadows: true
+    }}
+    color='#fffff'
+    loop={true}
+    pagination={{clickable: true}}
+    slidesPerView={2}
+    >
+        {
+            slider.map(data => (
+                <SwiperSlide style={{ backgroundImage: `url(${data.url})` }} className="myswiper-slider">
+              
+                </SwiperSlide>
+            ))
+        }
+    </Swiper>
 
-    </div>
+</div>
   )
 }
 export default Experience

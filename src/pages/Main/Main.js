@@ -21,7 +21,6 @@ function Main() {
             <Experience />
             <DressCode />
             <Projects/>
-            <Footer />
         </div>
     )
 }

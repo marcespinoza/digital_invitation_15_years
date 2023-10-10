@@ -198,17 +198,13 @@ a {
 
   .page {
     width: 100%;
-    min-height: 10vh;
+    height: 100vh;
     display: flex;
     background-image: url('../../assets/png/neon_countdown.jpg');
-  background-size: 50rem;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 
   .countdown-box {
