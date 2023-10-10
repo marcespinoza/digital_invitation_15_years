@@ -2,6 +2,7 @@
 
 .asistencia {
     display: flex;
+    min-height: 50vh;
     flex-direction: column; 
     align-items: center;
     justify-content: center;
@@ -21,21 +22,38 @@
     margin: 1rem;
 }
 
+.header p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Tilt Neon';
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
+}
 
 .asistencia h1 {
     margin-bottom: 10px;
-    font-size: 1.5rem;
-    font-family: 'Tilt Neon';
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Yellowtail';
     color: #fff;
-        text-shadow:
-            0 0 7px #fff,
-            0 0 10px #fff,
-            0 0 21px #fff,
-            0 0 42px #bc13fe,
-            0 0 82px #bc13fe,
-            0 0 92px #bc13fe,
-            0 0 102px #bc13fe,
-            0 0 151px #bc13fe;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
 }
 
 .asistencia--body {
@@ -65,18 +83,32 @@
 
 .asistenciaButton {
     font-size:25px;
-    height:60px;
-    width:350px;
-    display:flex;
+    height:50px;
+    width:250px;
+    display: flex;
     justify-content:center;
     align-items:center;
-    cursor: pointer;
     font-family: "Roboto-light";
     text-decoration: none;
-    background-color:transparent;
     border-radius: 1.5em;
     transition:all 0.5s;
-    margin: auto;
+    color:white;
+    background: transparent;
+    border: currentColor 0.125em solid;
+    box-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
+  }
+
+  .header a{
+    display: flex;
+    justify-content: center;
   }
    
   .asistenciaButton:hover{
@@ -84,9 +116,6 @@
       color:#fff;
   }
 
-  .a {
-
-  }
 
 
 @media (min-width: 992px) and (max-width: 1380px) {
@@ -135,6 +164,7 @@
         padding: 1rem;
         overflow: hidden;
         position: absolute;
+        min-height:  40vh;
         width: 100%;
     }
 
@@ -157,7 +187,7 @@
 
     .header p {
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: 'Tilt Neon';
         margin-bottom: 1rem;
         color: #fff;
@@ -185,6 +215,7 @@
         border-radius: 1.5em;
         transition:all 0.5s;
         color:white;
+        background: transparent;
         border: currentColor 0.125em solid;
         box-shadow:
             0 0 7px #fff,

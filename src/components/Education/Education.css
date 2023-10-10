@@ -10,16 +10,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../../assets/png/neon_selfie.jpg");
+    background-image: url("../../assets/png/neon_camera.jpg");
 }
 
 .education-body h1{
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Tilt Neon';
+    margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
     color: #fff;
-  text-shadow:
+    text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
@@ -215,7 +216,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url("../../assets/png/neon_selfie.jpg");
+        background-image: url("../../assets/png/neon_camera3.jpg");
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -236,18 +237,6 @@
 @media only screen and (device-width: 768px) {
 
 }
-
-.bgimg-1 {
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../../assets/png/neon.jpg");
-    height: 100vh;
-    width: 100vh;
-}
-
 
 .caption {
     position: absolute;

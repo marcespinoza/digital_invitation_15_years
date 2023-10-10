@@ -7,11 +7,16 @@
 
 .carousel {
     position: relative;
-    width: calc(min(90rem, 90%));
+    width: 100%;
     margin: 0 auto;
     min-height: 50vh;
     column-gap: 3rem;
     padding-block: min(20vh, 1rem);
+    justify-content: center;
+    background-image: url('../../assets/png/neon_carrousel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media screen and (min-width: 48rem) {

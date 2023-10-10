@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 70vh;
     padding: 0.5rem 2rem 2rem 2rem;
     color: rgb(252, 252, 252);
 }
@@ -33,10 +34,23 @@
         0 0 151px #bc13fe;
 }
 
+.fiestaHeader p{
+    display: flex;
+    margin-bottom: 3.6rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Tilt Neon";
+    justify-content: center; 
+    color: rgb(255, 255, 255);
+}
+
 .fiesta h2 {
     margin-top: 2.0rem;
     font-style: normal;
     font-size: 3.5rem;
+    font-family: 'Yellowtail';
     text-align: center;
     color: white;
     text-shadow:
@@ -113,8 +127,8 @@
 
 .fiestaButton {
     font-size:25px;
-    height:60px;
-    width:350px;
+    height:50px;
+    width:250px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -122,8 +136,16 @@
     text-decoration: none;
     color: #FAFAFA;
     border-color: transparent;
+    background: transparent;
     border-radius: 1.5em;
     transition:all 0.5s;
+    border: currentColor 0.125em solid;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe; 
   }
    
   .fiestaButton:hover{
@@ -187,6 +209,10 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    .fiesta{
+        min-height: 50vh;
+    }
     .skill--box {
         width: 135px;
         height: 135px;
@@ -219,14 +245,7 @@
         font-family: "Roboto-light";
         text-decoration: none;
         background: transparent;
-        border-radius: 1.25em;
-        text-shadow: 0 0 .2rem #fff,
-        0 0 .2rem #fff,
-        0 0 2rem #bc13fe,
-        0 0 0.8rem #bc13fe,
-        0 0 2.8rem #bc13fe,
-        inset 0 0 1.3rem #bc13fe; 
-  
+        border-radius: 1.25em;  
         border: currentColor 0.125em solid;
         box-shadow: 0 0 .2rem #fff,
         0 0 .2rem #fff,
