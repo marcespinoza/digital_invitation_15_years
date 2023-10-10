@@ -33,7 +33,9 @@ function Musica() {
           </p>
           </div>
           <div className='buttonMusic'>
+          <a href="https://forms.gle/Tyy8RiedvE4sfqcXA">
             <button class="music">Sugerir canción</button>
+            </a>
           </div>
        </div>
     )
