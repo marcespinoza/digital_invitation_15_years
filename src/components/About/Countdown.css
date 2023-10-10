@@ -198,10 +198,8 @@ a {
 
   .page {
     display: flex;
-    background-image: url('../../assets/png/neon_countdown.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+
   }
 
   .countdown-box {
