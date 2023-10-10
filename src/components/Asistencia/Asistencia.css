@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100vh;
     background-image: url('../../assets/png/neon_asistencia.jpg');
     background-position: center;
     background-attachment: fixed;
@@ -133,9 +134,11 @@
         align-items: center;
         color: black;
         justify-content: center;
-        overflow-x: hidden;
         padding: 1rem;
         overflow: hidden;
+        position: absolute;
+        width: 100vh;
+        height: 100vh;
     }
 
     .asistencia h1 {
