@@ -7,9 +7,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -214,7 +211,6 @@
       0 0 150px #bc13fe;
     }
     .education-body {
-        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

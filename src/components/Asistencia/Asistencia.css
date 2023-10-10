@@ -5,11 +5,9 @@
     flex-direction: column; 
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vh;
+    width: 100%;
     background-image: url('../../assets/png/neon_asistencia.jpg');
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -137,8 +135,7 @@
         padding: 1rem;
         overflow: hidden;
         position: absolute;
-        width: 100vh;
-        height: 100vh;
+        width: 100%;
     }
 
     .asistencia h1 {
