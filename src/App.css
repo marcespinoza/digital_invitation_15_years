@@ -4,3 +4,6 @@
     /* --primaryFont: 'Raleway', sans-serif; */
 }
 
+html{
+  scroll-behavior: smooth;
+}

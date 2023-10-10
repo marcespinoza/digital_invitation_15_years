@@ -181,6 +181,7 @@
 @media screen and (max-width: 800px) {
     .musica {
         padding: 0.5rem;
+        height: 40vh;
     }
     .musicaContainer {
         padding: 0.5rem;
@@ -226,7 +227,7 @@
     .musica h1 {
             width: 100%;
             font-family: 'Yellowtail';
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             display: flex;
             text-align: center;
             justify-content: center;

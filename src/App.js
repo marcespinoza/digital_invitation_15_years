@@ -1,4 +1,4 @@
-import React, { useContext, useEffect , useState} from 'react';
+import React, { useContext, useEffect , useLayoutEffect, useState} from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 import { ThemeContext } from './contexts/ThemeContext';
@@ -65,7 +65,7 @@ function App() {
   const isItBday =
   currentTime.getDate() === day && currentTime.getMonth() === month - 1;
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setInterval(() => {
       const countdown = () => {
         const dateAtm = new Date();

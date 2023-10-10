@@ -199,9 +199,9 @@ a {
   .page {
     display: flex;
     background-image: url('../../assets/png/neon_countdown.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .countdown-box {
@@ -247,7 +247,8 @@ a {
   .neonCountDown {
     animation: flicker 1.5s infinite alternate;
     color: #ffffff;
-    font-size: 4rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
     font-family: 'Yellowtail';
   }
 }

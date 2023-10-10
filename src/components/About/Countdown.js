@@ -7,7 +7,7 @@ const Countdown = ({ countdownData, name }) => {
     return (
       <div>
         <h1 className='neonCountDown'>
-          Faltan
+          FALTAN
         </h1>
         <div className='countdown-wrapper'>
           <div className='countdown-box'>
