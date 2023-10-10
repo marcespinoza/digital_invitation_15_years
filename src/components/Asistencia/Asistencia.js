@@ -30,7 +30,7 @@ function Asistencia() {
            ¡Confirmá tu asistencia!
     </p>
     <div >
-        <a href="https://forms.gle/bVPjxo125CCv8wzu9">
+        <a href="https://forms.gle/bVPjxo125CCv8wzu9" target="_blank">
        <button class="asistenciaButton">Confirmar asistencia</button>
        </a>
     </div>
